@@ -1,6 +1,10 @@
-# FirstApp
+# Angular Tree Visualizer Plugin
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.4.
+A Tree Visualizer for Angular 2 and above
+
+##Setup
+
+Run `npm install` command to install dependencies
 
 ## Development server
 
