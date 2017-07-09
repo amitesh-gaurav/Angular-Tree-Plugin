@@ -2,7 +2,7 @@
 
 A Tree Visualizer for Angular 2 and above
 
-##Setup
+## Setup
 
 Run `npm install` command to install dependencies
 
