@@ -1,0 +1,13 @@
+<svg [attr.width]="canvasWidth" [attr.height]="canvasHeight" style="background-color:#EEE">
+
+  <ng-container *ngFor="let node of traversalOrder; let i = index">
+    <text *ngIf="i!=0" [attr.x]="nodeWidth*(node.level+1)+(nodeWidth-25)" [attr.y]="nodeHeight*(i+1)-nodeHeight+35" fill="#003171"
+      font-family="Verdana" font-size="14px">></text>
+    <text [attr.x]="nodeWidth*(node.level+1)+(nodeWidth-10)" [attr.y]="nodeHeight*(i+1)-nodeHeight+35" fill="#7A942E" font-family="Verdana"
+      font-size="14px">{{node.name}}</text>
+    <line *ngIf="i!=0" [attr.x1]="nodeWidth*(node.level+1)" [attr.y1]="nodeHeight*(node.parent+1)+10" [attr.x2]="nodeWidth*(node.level+1)"
+      [attr.y2]="nodeHeight*(i+1)" style="stroke:#003171;stroke-width:2" />
+    <line *ngIf="i!=0" [attr.x1]="nodeWidth*(node.level+1)" [attr.y1]="nodeHeight*(i+1)" [attr.x2]="nodeWidth*(node.level+1)+nodeWidth-20"
+      [attr.y2]="nodeHeight*(i+1)" style="stroke:#003171;stroke-width:2" />
+  </ng-container>
+</svg>
