@@ -1,6 +1,6 @@
 # Angular Tree Visualizer Plugin
 
-A Tree Visualizer for Angular 2 and above
+A Tree Visualizer for Angular 2 and above. Click [demo](https://plnkr.co/edit/pMMdAUnDbUx4GMLaHfVs?p=preview) for preview on Plnkr
 
 ## Setup
 
